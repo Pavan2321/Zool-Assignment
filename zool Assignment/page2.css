@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --body-color: #E4E9F7;
+    --nav-color:#FAFAFA;
+    --side-nav:#FFFFFC;
+    --text-color:#000;
+}
+
+body{
+    background:#f0f0f5;
+}
+
+nav{
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    z-index: 100;
+    border-bottom: 1px solid #f0f0f5;
+}
+
+nav  .navbar{
+    position: relative;
+    height: 100%;
+    max-width: 1300px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar-inner{
+    display: flex;
+}
+
+
+nav  .navbar .logo a{
+    font-size:25px;
+    font-weight:500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.menu .logoToggle{
+    display:none;
+}
+
+nav .navbar .siderbarOpen{
+    color: var(--text-color);
+    font-size: 25px;
+    padding:5px;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar .navLinks{
+    display: flex;
+    align-items: center;
+}
+
+.navbar .navLinks li{
+    margin: 0 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.navLinks li a{
+    position: relative;
+    font-size:17px;
+    font-weight:500;
+    color: var(--text-color);
+    text-decoration: none;
+
+}
+.navLinks li p{
+    font-size:11px;
+    font-weight:100;
+    color: #888;
+}
+
+ 
+.dropdown {
+    float: right;
+    overflow: hidden;
+  }
+
+  
+  .dropdown .dropbtn {
+    cursor: pointer;
+    font-size: 16px;  
+    border: none;
+    outline: none;
+    color: #000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .dropbtn i{
+      color:#000;
+  }
+   
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .dropdown-content .dlinks {
+    float: none;
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: 14px;
+    font-weight:300;
+  }
+    
+  .show {
+    display: block;
+    z-index: 100;
+  }
+
+.btn{
+    background: none;
+    padding: 4px 10px;
+    border-radius:4px;
+    color: gray;
+    border: 1px solid gray;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* navend */
+
+.subnav{
+    position:sticky;
+    top: 0;
+    right: 0;
+    height: 70px;
+    width: 100%;
+    background-color: #fff;
+    border-bottom: 1px solid #f0f0f5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    z-index: 10;
+    
+}
+
+.subnav  .subnavbar{
+    position: relative;
+    height: 100%;
+    max-width: 1300px;
+    width: 100%;
+    background-color: #fff;
+    margin: 0 auto;
+    padding: 0 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.subnav .subnavLink{
+    display: flex;
+    align-items: center;
+}
+
+.subnav .subnavLink li{
+    margin: 0 5px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 10px;
+}
+
+.subnav .subnavLink li a{
+    position: relative;
+    font-size:14px;
+    font-weight:200;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.subnav input{
+    width: 300px;
+    padding: 4px;
+    border: 1px solid gray;
+}
+
+.imageContainer{
+    background-image:url(./images/backgroundImg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 480px;
+    width: 100%;
+}
+
+.containerHolder{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width:1300px;
+    margin: 0 auto;
+    background: #e5e5eb;
+}
+
+.leftContainer{
+    position: relative;
+    top: -100px;
+    max-width: 640px;
+    background: #fff;
+}
+.leftContent{
+    margin: 0 auto;
+    padding: 70px;
+}
+.leftContent h1{
+    font-size:38px
+}
+
+.leftContainer .docName{
+    display: flex;
+    margin: 20px 0;
+}
+
+.leftContainer .docName img{
+    border-radius:70px;
+    width:50px;
+}
+
+.leftContainer .docName h2{
+    font-size:20px;
+    color: rgb(78, 211, 216);
+    padding-left: 20px;
+    font-weight: 400;
+}
+
+.leftContainer p{
+    padding: 20px 0;
+    line-height:30px;
+}
+
+.leftContainer .button{
+    background: none;
+    color: gray;
+    border:1px solid gray;
+    padding:4px 8px;
+    border-radius:4px;
+}
+
+.leftContainer .button:hover{
+    background:rgb(219, 213, 213);
+}
+
+
+.articles{
+    max-width:1200px;
+    margin:30px auto;
+}
+.articles .arLink{
+    display: flex;
+    margin:20px 0;
+    flex-wrap: wrap;
+}
+
+.articles .arLink li{
+    margin: 0 11px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.articles .arLink li:hover{
+    border-bottom: 1px solid gray;
+}
+
+.leftContainer .imgContainer img{
+    margin-top:-7px ;
+    width:500px;
+}
+
+
+.rightContainer {
+    padding-left:40px;
+}
+
+.rightContainer .doc{
+    margin-top: 130px;
+    width:400px
+}
+
+.popularArticle{
+    width:380px;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+
+.popularArticle .arcon{
+    display: flex;
+    padding: 10px 20px;
+}
+.popularArticle .arcon img{
+    width:100px;
+    padding-right:10px;
+}
+
+.popularArticle .arcon h4{
+    font-size: 14px;
+}
+
+.relatedQuestions{
+    margin-top:100px;
+    background:#fff;
+    max-width:380px;
+    padding:30px;
+}
+
+.relatedQuestions h1{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.relatedQuestions h6{
+    margin: 10px 0;
+}
+.relatedQuestions p{
+    font-size:13px;
+    margin-top:17px;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color:rgb(46, 46, 139);
+    /* height:440px; */
+    padding-top: 40px;
+}
+footer .linkContainer{
+ display: flex;
+ flex-wrap: wrap;
+ justify-content:space-around;
+}
+
+.linkContainer h1{
+    color: #fff;
+    font-size:18px;
+}
+.linkContainer ul li{
+   list-style-type: none;
+}
+
+.linkContainer a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+}
+
+.linkContainer a:hover{
+    border-bottom: 1px solid #fff;
+}
+
+.copyRight{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+    padding: 60px 0;
+}
+.copyRight p{
+    padding-top:30px;
+    color: rgb(230, 224, 224);
+    font-size: 14px;
+}
+
+
+@media (max-width: 1170px) {
+    nav .navbar .siderbarOpen{
+        display: block;
+    }
+
+    .inputContainer .ads img{
+     display:none;
+    }
+    
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding:20px;
+        background-color: var(--side-nav);
+        z-index:100;
+        transition: all 0.4s ease;
+    }
+
+    nav.active .menu{
+        left: -0%;
+    }
+
+    nav.active  .navbar .navLogo a{
+        opacity: 0;
+        transition: all 0.3s ease;
+
+    }
+
+    .menu .logoToggle{
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+   
+    .logoToggle .siderbarClose{
+        color: var(--text-color);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .navbar .navLinks{
+        flex-direction: column;
+        padding-top: 20px;
+        align-items:flex-start;
+    }
+    .navLinks li a{
+        display: block;
+        margin-top:10px;
+    }
+
+}
+
+@media (max-width: 560px) {
+
+    .hide{
+        display: none;
+    }
+    .inp input{
+        width: 140px;
+    }
+    .leftContainer{
+        max-width: 360px;
+        background: #fff;
+    }
+
+    .leftContent{
+        margin: 0 auto;
+        padding: 40px 20px;
+    }
+
+    .leftContent h1{
+        font-size:20px
+    }
+
+    .leftContainer .docName h2{
+        font-size:14px;
+        padding-left: 20px;
+        font-weight: 400;
+    }
+
+    .leftContainer p{
+        font-size:14px;
+        padding: 10px 0;
+        line-height:30px;
+        text-align: justify;
+    }
+
+    .leftContainer .imgContainer img{
+        width:320px;
+    }
+
+    .rightContainer .doc{
+        margin: 0 auto;
+        width:340px
+    }
+
+    .relatedQuestions{
+        margin-top:100px;
+        background:#fff;
+        max-width:348px;
+    }
+
+}
+
